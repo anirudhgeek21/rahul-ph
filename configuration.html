@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Configuration</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">MyWebsite</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="project-plan.html">Project Plan</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="configuration.html">Configuration</a></li>
+        <li><a href="support.html">Support</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="configuration" class="section">
+      <h2>Configuration</h2>
+      <h3>Enter Readings</h3>
+      
+      <!-- Input Fields for Readings -->
+      <form id="readingsForm">
+        <div class="form-group">
+          <label for="soilSensor">Soil Sensor:</label>
+          <input type="text" id="soilSensor" placeholder="Enter Soil Sensor Reading">
+        </div>
+        <div class="form-group">
+          <label for="temperature">Temperature:</label>
+          <input type="text" id="temperatureInput" placeholder="Enter Temperature">
+        </div>
+        <div class="form-group">
+          <label for="humidity">Humidity:</label>
+          <input type="text" id="humidityInput" placeholder="Enter Humidity">
+        </div>
+        <div class="form-group">
+          <label for="ph">pH:</label>
+          <input type="text" id="phInput" placeholder="Enter pH">
+        </div>
+        <div class="form-group">
+          <label for="tds">TDS:</label>
+          <input type="text" id="tdsInput" placeholder="Enter TDS">
+        </div>
+        <button type="button" onclick="submitReadings()">Submit</button>
+      </form>
+
+      <!-- Display the submitted readings -->
+      <h3>Submitted Readings</h3>
+      <ul>
+        <li>Soil Sensor: <span id="soil-sensor">Reading here</span></li>
+        <li>Temperature: <span id="temperature">Reading here</span></li>
+        <li>Humidity: <span id="humidity">Reading here</span></li>
+        <li>pH: <span id="ph">Reading here</span></li>
+        <li>TDS: <span id="tds">Reading here</span></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 MyWebsite. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
